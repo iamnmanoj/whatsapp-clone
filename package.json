@@ -17,6 +17,6 @@
   },
   "scripts": {
     "start": "nodemon src/index.js",
-    "postinstall": "yarn husky install"
+    "postinstall": "console.log('HI')"
   }
 }
