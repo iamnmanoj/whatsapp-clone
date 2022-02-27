@@ -920,6 +920,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commitlint@npm:^16.2.1":
+  version: 16.2.1
+  resolution: "commitlint@npm:16.2.1"
+  dependencies:
+    "@commitlint/cli": ^16.2.1
+    "@commitlint/types": ^16.2.1
+  bin:
+    commitlint: cli.js
+  checksum: 3c23cde56980de2d284011a82eceecaf45a16a45ece352a9d30408ab4c5e41084eaba71099732aeb33d2bbca366b2754ef72559ddd8a2eead37ebff20852c658
+  languageName: node
+  linkType: hard
+
 "compare-func@npm:^2.0.0":
   version: 2.0.0
   resolution: "compare-func@npm:2.0.0"
@@ -3653,6 +3665,7 @@ __metadata:
     "@commitlint/config-conventional": ^16.2.1
     "@types/express": ^4.17.13
     "@types/node": ^17.0.21
+    commitlint: ^16.2.1
     express: ^4.17.3
     husky: ^7.0.4
     nodemon: ^2.0.15
