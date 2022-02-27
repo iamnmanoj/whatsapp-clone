@@ -15,12 +15,15 @@ io.on('connection', (socket) => {
     console.log('a user connected');
     socket.on('chat message', (msg) => {
         io.emit('chat message', msg);
-      });
-    socket.on('disconnect', () => {
-        //         console.log('user disconnected');
-        //     });
     });
-    socket.broadcast.emit('hi');
+    socket.on('disconnect', () => {
+        console.log('user disconnected');
+    });
+    socket.on('nickname', (nickName) => {
+        console.log(`${nickName} has connected`);
+    });
+
+    socket.broadcast.emit('broadcast', { msg: 'A new user has been added to this socket' })
 });
 
 server.listen(3000, () => {
